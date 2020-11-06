@@ -6,14 +6,30 @@
   
   <canvas id="can"></canvas>
   <script>
-
+// ブロックの大きさ
     const BLOCK_SIZE   = 30;
-    
+// てとろみノノ大きさ
+    const TETRO_SIZE = 4;
+
+
     let can = document.getElementById("can");
     let con = can.getContext("2d");
 
     con.fillStyle="red";
-    con.fillRect(0,0,50,50);
+    con.fillRect(0,0,BLOCK_SIZE,BLOCK_SIZE);
+      
+  let tetro=[
+    [0,0,0,0]
+    [1,1,0,0]
+    [0,1,1,0]
+    [0,0,0,0]
+  ];
+
+  for(let y=0; y<TETRO_SIZE; y++>){
+  {
+    for(let x=0; x=TETRO_SIZE; x++)
+  }
+  } 
 
   </script>
 </body>
