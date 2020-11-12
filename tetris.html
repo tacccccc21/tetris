@@ -15,13 +15,18 @@
     let can = document.getElementById("can");
     let con = can.getContext("2d");
       
-      // ブロックがある所が１
+      // てトロミの本体
   let tetro=[
     [0,0,0,0],
     [1,1,0,0],
     [0,1,1,0],
     [0,0,0,0]
   ];
+
+  // てとろみのの座標
+  let tetro_x = 0;
+  let tetro_y = 0;
+
 
 for(let y=0; y<TETRO_SIZE ; y++ )
 {
@@ -37,6 +42,22 @@ for(let y=0; y<TETRO_SIZE ; y++ )
     con.strokeRect(px,py,BLOCK_SIZE,BLOCK_SIZE);
     }
   }
+}
+// onkeydown keykode 検索
+document.onkeydown = (e)=> {
+switch(e.keyCode){
+  case 37 :
+      break;
+  case 38 :
+      break;
+  case 39 :
+      break;
+  case 40 :
+      break;
+  case 32 :
+      break;
+}
+
 }
 
 
